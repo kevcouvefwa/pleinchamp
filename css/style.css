@@ -1,0 +1,99 @@
+body {
+    margin: 3% 5%;
+}
+
+
+/**
+FORMULAIRE
+ */
+
+form {
+    width: 800px;
+    margin: auto;
+}
+
+.announce, .postalCode, .contact, .societe, .tva, .nom, .prenom, .rue, .postalCode div, .tel, .mail, .file, .numero {
+    display: flex;
+}
+
+.announce {
+    width: 100%;
+}
+
+
+.details {
+    width: 50%;
+}
+
+.details input {
+    width: 257px;
+}
+
+input {
+    width: 380px;
+}
+
+.parution input, .numero input {
+    width: 40px;
+}
+
+.CP input {
+    width: 100px;
+}
+
+.localite input {
+    width: 123px;
+}
+
+.announcePrice {
+    width: 9%;
+    text-align: right;
+}
+
+.announcePrice div {
+    text-align: left;
+}
+
+.contact div:first-child, .societe div:first-child, .tva div:first-child, .nom div:first-child, .prenom div:first-child, .rue div:first-child, .tel div:first-child, .mail div:first-child, .mail div:first-child, .numero div:first-child {
+    width: 10%;
+}
+
+.postalCode div {
+    width: 32%;
+}
+
+.CP div label, .localite div label {
+    width: 10%;
+}
+
+input[type=file]::file-selector-button {
+    border: 1px solid darkseagreen;
+    border-radius: .2em;
+    background-color: darkseagreen;
+    color: white;
+}
+
+
+.submit input {
+    width: 150px;
+}
+
+/**
+COMMANDE
+ */
+
+table {
+    margin: auto;
+    width: 500px;
+    text-align: right;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+
