@@ -12,7 +12,7 @@ form {
     margin: auto;
 }
 
-.announce, .postalCode, .contact, .societe, .tva, .nom, .prenom, .rue, .postalCode div, .tel, .mail, .file, .numero {
+.announce, .postalCode, .contact, .societe, .tva, .nom, .prenom, .rue, .postalCode div, .tel, .mail, .file, .numero, .parution {
     display: flex;
 }
 
@@ -34,7 +34,11 @@ input {
 }
 
 .parution input, .numero input {
-    width: 40px;
+    width: 30px;
+}
+
+.facture input {
+    width: 30px;
 }
 
 .CP input {
@@ -52,6 +56,10 @@ input {
 
 .announcePrice div {
     text-align: left;
+}
+
+.parution div:first-child {
+    width: 28%;
 }
 
 .contact div:first-child, .societe div:first-child, .tva div:first-child, .nom div:first-child, .prenom div:first-child, .rue div:first-child, .tel div:first-child, .mail div:first-child, .mail div:first-child, .numero div:first-child {

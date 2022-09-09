@@ -7,12 +7,20 @@
 </head>
 <body>
 <main>
+
+
     <div id="app">
         <form action="commande.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="rubrique">Rubrique: </label>
                 <select name="rubrique" id="rubrique">
                     <option value="">Selectionner une rubrique</option>
+                    <?php include('action.php') ?>
+                    <?php
+                    foreach ($tagsList as $tags) {
+                        echo '<option value="'. $tags['id'] .'">' . $tags['name'] . '</option>';
+                    }
+                    ?>
                 </select>
             </div>
             <br>
@@ -38,12 +46,16 @@
             </div>
             <br>
             <div class="parution">
-                <label for="parution">Nombre de parutions : </label>
-                <input type="number" name="parution" id="parution" value="1">
+                <div>
+                    <label for="parution">NOMBRE DE PARUTIONS : </label>
+                </div>
+                <div>
+                    <input type="number" name="parution" id="parution" value="1">
+                </div>
             </div>
             <br>
-            <div>
-                <label for="facture">A FACTURER </label>
+            <div class="facture">
+                <label for="facture">A FACTURER : </label>
                 <input type="checkbox" name="facture" id="facture" v-model="checked">
             </div>
             <br>
